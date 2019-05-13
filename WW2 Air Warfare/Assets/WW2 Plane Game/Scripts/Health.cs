@@ -20,7 +20,7 @@ public class Health : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        anim = GetComponent<Animator>();
+        
         // setting the current health the same as max health at the start of the game
         CurrentHealth = maximumHealth;
         rend = GetComponentInChildren<Renderer>();
@@ -38,30 +38,12 @@ public class Health : MonoBehaviour
         }
     }
 
-    //  public string currenthealth
-    //   {
-    //      get { return currentHealth; }
-    //     set {
-    //       if (value < 100)
-    //      {
-    //         CurrentHealth = 100;
-    //    }
-    //   }
-    //}
+
 
     public bool IsDead { get { return CurrentHealth <= 0; } }
     //using IsDead to get the result of the code current health <=0
 
-    public int GetHealth()
-    {
-        return CurrentHealth;
-    }
 
-    public int getMaxHealth()
-    {
-        return maximumHealth;
-
-    }
     public void Damage(int damageValue)
     {
         CurrentHealth -= damageValue;
