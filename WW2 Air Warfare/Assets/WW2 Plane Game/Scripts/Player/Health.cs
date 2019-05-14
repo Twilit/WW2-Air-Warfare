@@ -13,8 +13,6 @@ public class Health : MonoBehaviour
     AudioSource audioSrc;
     [SerializeField] AudioClip deathsound;
 
-    Animator anim;
-
     public Renderer rend;
 
     // Use this for initialization
@@ -56,7 +54,7 @@ public class Health : MonoBehaviour
 
             {
                 //seting the boolen for dead as true if the Enemey health is 0
-                anim.SetBool("Dead", true);
+                
                 audioSrc.clip = deathsound;
                 audioSrc.Play();
                 GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = true;

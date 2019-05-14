@@ -32226,7 +32226,7 @@ PrefabInstance:
     - target: {fileID: 8241180823500549907, guid: 49f85ecec7b54774ebcebefbb88b8801,
         type: 3}
       propertyPath: m_Name
-      value: English_Plane
+      value: English_Plane_Keyboard
       objectReference: {fileID: 0}
     - target: {fileID: 8241180823500549906, guid: 49f85ecec7b54774ebcebefbb88b8801,
         type: 3}
@@ -32281,6 +32281,11 @@ PrefabInstance:
     - target: {fileID: 8241180823500549906, guid: 49f85ecec7b54774ebcebefbb88b8801,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3387501866299537357, guid: 49f85ecec7b54774ebcebefbb88b8801,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
