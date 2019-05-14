@@ -7,13 +7,14 @@ public class HealPickup : MonoBehaviour {
      void OnTriggerEnter(Collider collider)
     {
         //printing a statement to console for testing purposes
-        print("pick up");
+        print(collider);
         //if the the object that colided with the health pick up has a player tag 
         //then get the players health script and check to see if ther is one and add health
-        if (collider.gameObject)
+        if (collider.tag == "PlayerGrabBox")
         {
+            print("pick up player");
             //colider.GetComponent gets the health script from the player not the pickup
-            Health health = collider.GetComponent<Health>();
+            Health health = collider.transform.root.GetComponent<Health>();
             if(health!=null)
             { 
 

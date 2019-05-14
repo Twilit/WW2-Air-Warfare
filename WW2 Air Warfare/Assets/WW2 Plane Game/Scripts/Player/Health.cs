@@ -52,7 +52,7 @@ public class Health : MonoBehaviour
         if (CurrentHealth <= 0)
         {
             //if the objects is not nuseing the player tag then add 50 to the players score and destroy the game object
-            if (gameObject.tag != "player") //POSIBLE IDEA if (gameObject.tag == "Enemy1")
+            if (gameObject.tag != "Player") //POSIBLE IDEA if (gameObject.tag == "Enemy1")
 
             {
                 //seting the boolen for dead as true if the Enemey health is 0

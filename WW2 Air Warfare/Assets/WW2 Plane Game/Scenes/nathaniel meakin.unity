@@ -34671,7 +34671,7 @@ MonoBehaviour:
   target: {fileID: 1357888556}
   distance: 10
   height: 6
-  smoothSpeed: 0.12
+  smoothSpeed: 0.22
   minHeightFromGround: 6
 --- !u!1001 &1875374038
 PrefabInstance:

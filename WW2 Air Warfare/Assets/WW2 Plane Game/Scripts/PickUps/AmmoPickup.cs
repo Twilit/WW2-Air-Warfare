@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AmmoPickup : MonoBehaviour { 
+public class AmmoPickup : MonoBehaviour
+{ 
 
-         void OnTriggerEnter(Collider collider)
+    void OnTriggerEnter(Collider collider)
     {
     //printing a statement to console for testing purposes
     print("pick up");
