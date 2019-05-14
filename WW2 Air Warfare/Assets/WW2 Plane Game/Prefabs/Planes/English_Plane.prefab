@@ -594,6 +594,8 @@ GameObject:
   - component: {fileID: 6742037398003433627}
   - component: {fileID: 6519977678261879263}
   - component: {fileID: 5369622559511847281}
+  - component: {fileID: 7690166604707875718}
+  - component: {fileID: 8198730377381444309}
   m_Layer: 0
   m_Name: English_Plane
   m_TagString: Untagged
@@ -827,6 +829,37 @@ MonoBehaviour:
   pitchSpeed: 1500
   rollSpeed: 1550
   yawSpeed: 1500
+--- !u!114 &7690166604707875718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8241180823500549907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db45fea0102c05849a0e656290893159, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maximumHealth: 100
+  CurrentHealth: 0
+  deathsound: {fileID: 0}
+  rend: {fileID: 0}
+--- !u!114 &8198730377381444309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8241180823500549907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954d2f7cc6513614590e3225ed7ce3c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maximumAmmo: 100
+  CurrentAmmo: 0
+  rend: {fileID: 0}
 --- !u!1 &8241180823634169720
 GameObject:
   m_ObjectHideFlags: 0
@@ -1407,10 +1440,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8241180824111841333}
     m_Modifications:
-    - target: {fileID: 1109334431578040, guid: 568fc47ce4a5fc94fa5a465b0ac82615, type: 3}
-      propertyPath: m_Name
-      value: SM_Veh_Plane_England_01
-      objectReference: {fileID: 0}
     - target: {fileID: 4179179839010190, guid: 568fc47ce4a5fc94fa5a465b0ac82615, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1459,29 +1488,27 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1109334431578040, guid: 568fc47ce4a5fc94fa5a465b0ac82615, type: 3}
+      propertyPath: m_Name
+      value: SM_Veh_Plane_England_01
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 568fc47ce4a5fc94fa5a465b0ac82615, type: 3}
---- !u!4 &8237179079610809678 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4179179839010190, guid: 568fc47ce4a5fc94fa5a465b0ac82615,
-    type: 3}
-  m_PrefabInstance: {fileID: 8241180824645044416}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &8237634799316674858 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4357911586284010, guid: 568fc47ce4a5fc94fa5a465b0ac82615,
-    type: 3}
-  m_PrefabInstance: {fileID: 8241180824645044416}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8236722706673095618 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4567245575314178, guid: 568fc47ce4a5fc94fa5a465b0ac82615,
     type: 3}
   m_PrefabInstance: {fileID: 8241180824645044416}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &5661042781058184146 stripped
+--- !u!4 &8237179079610809678 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 4381613354900896530, guid: 568fc47ce4a5fc94fa5a465b0ac82615,
+  m_CorrespondingSourceObject: {fileID: 4179179839010190, guid: 568fc47ce4a5fc94fa5a465b0ac82615,
+    type: 3}
+  m_PrefabInstance: {fileID: 8241180824645044416}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8240400481723394010 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1485302748032794, guid: 568fc47ce4a5fc94fa5a465b0ac82615,
     type: 3}
   m_PrefabInstance: {fileID: 8241180824645044416}
   m_PrefabAsset: {fileID: 0}
@@ -1509,9 +1536,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8241180824645044416}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &8240400481723394010 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1485302748032794, guid: 568fc47ce4a5fc94fa5a465b0ac82615,
+--- !u!4 &8237634799316674858 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4357911586284010, guid: 568fc47ce4a5fc94fa5a465b0ac82615,
+    type: 3}
+  m_PrefabInstance: {fileID: 8241180824645044416}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5661042781058184146 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4381613354900896530, guid: 568fc47ce4a5fc94fa5a465b0ac82615,
     type: 3}
   m_PrefabInstance: {fileID: 8241180824645044416}
   m_PrefabAsset: {fileID: 0}
