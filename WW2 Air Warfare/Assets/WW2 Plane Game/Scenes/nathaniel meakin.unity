@@ -6871,7 +6871,7 @@ Light:
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
-    m_Bias: 0.05
+    m_Bias: 0.239
     m_NormalBias: 0.4
     m_NearPlane: 0.2
     m_CullingMatrixOverride:
@@ -34655,7 +34655,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  profile: {fileID: 11400000, guid: 7ab02e0647cba0642bce110599c2b3c3, type: 2}
+  profile: {fileID: 11400000, guid: 834241e5d1182ee44a6fdc5ea3d21a3d, type: 2}
 --- !u!114 &1873887815
 MonoBehaviour:
   m_ObjectHideFlags: 0
