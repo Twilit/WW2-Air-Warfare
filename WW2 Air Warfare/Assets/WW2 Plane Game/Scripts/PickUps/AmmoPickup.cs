@@ -11,10 +11,10 @@ public class AmmoPickup : MonoBehaviour
     print("pick up");
         //if the the object that colided with the health pick up has a player tag 
         //then get the players health script and check to see if ther is one and add health
-        if (collider.gameObject)
+        if (collider.tag == "PlayerGrabBox")
         {
             //colider.GetComponent gets the health script from the player not the pickup
-            Ammo Ammo = collider.GetComponent<Ammo>();
+            Ammo Ammo = collider.transform.root.GetComponent<Ammo>();
 
             if(Ammo!=null)
             { 
