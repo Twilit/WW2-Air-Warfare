@@ -508,7 +508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99439f8de3b9305459fd8be5e5607356, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxForce: 20000
+  maxForce: 10000
   maxRPM: 3000
   powerCurve:
     serializedVersion: 2
@@ -1628,6 +1628,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ab2a659e469a8b46b87d9d91008f2c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wheelGraphic: {fileID: 0}
+  isBraking: 0
+  brakePower: 5
+  isSteering: 1
+  steerAngle: 25
+  steerSmoothSpeed: 10
 --- !u!1 &8241180823500549907
 GameObject:
   m_ObjectHideFlags: 0
@@ -1840,7 +1846,7 @@ MonoBehaviour:
   mph: 0
   maxMPH: 110
   rbLerpSpeed: 0.03
-  maxLiftPower: 5000
+  maxLiftPower: 2500
   liftCurve:
     serializedVersion: 2
     m_Curve:
@@ -1854,8 +1860,8 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.530194
-      value: 0.7970726
+      time: 0.7181319
+      value: 0.860723
       inSlope: 3.0088947
       outSlope: 3.0088947
       tangentMode: 0
@@ -1864,7 +1870,7 @@ MonoBehaviour:
       outWeight: 0.033826433
     - serializedVersion: 3
       time: 1
-      value: 0.76900065
+      value: 0.9033619
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -2022,6 +2028,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ab2a659e469a8b46b87d9d91008f2c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wheelGraphic: {fileID: 0}
+  isBraking: 1
+  brakePower: 500
+  isSteering: 0
+  steerAngle: 20
+  steerSmoothSpeed: 2
 --- !u!1 &8241180823804966056
 GameObject:
   m_ObjectHideFlags: 0
@@ -2349,6 +2361,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ab2a659e469a8b46b87d9d91008f2c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wheelGraphic: {fileID: 0}
+  isBraking: 1
+  brakePower: 500
+  isSteering: 0
+  steerAngle: 20
+  steerSmoothSpeed: 2
 --- !u!1 &8241180824835003871
 GameObject:
   m_ObjectHideFlags: 0
@@ -2489,6 +2507,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5661042781058184146}
     m_Modifications:
+    - target: {fileID: 282302426313917675, guid: ea9db78c984db5d4f84f8d9c8d395688,
+        type: 3}
+      propertyPath: m_Name
+      value: SM_Veh_Plane_England_01_Prop
+      objectReference: {fileID: 0}
+    - target: {fileID: 282302426313917675, guid: ea9db78c984db5d4f84f8d9c8d395688,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 287669164655190759, guid: ea9db78c984db5d4f84f8d9c8d395688,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2543,16 +2571,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 282302426313917675, guid: ea9db78c984db5d4f84f8d9c8d395688,
-        type: 3}
-      propertyPath: m_Name
-      value: SM_Veh_Plane_England_01_Prop
-      objectReference: {fileID: 0}
-    - target: {fileID: 282302426313917675, guid: ea9db78c984db5d4f84f8d9c8d395688,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea9db78c984db5d4f84f8d9c8d395688, type: 3}
