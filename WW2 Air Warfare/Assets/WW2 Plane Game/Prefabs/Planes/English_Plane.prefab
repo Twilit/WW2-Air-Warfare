@@ -378,6 +378,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
+  fireRate: 15
+  input: {fileID: 3387501866299537357}
   guns:
   - {fileID: 5630041604826949225}
   - {fileID: 5753508426393631743}

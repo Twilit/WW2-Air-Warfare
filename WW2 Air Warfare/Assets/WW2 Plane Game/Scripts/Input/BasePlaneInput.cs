@@ -17,6 +17,8 @@ namespace PlaneFlight
         protected int maxFlapIncrements = 2;
         protected int flaps = 0;
 
+        protected bool shooting = false;
+
         public float throttleSpeed = 0.1f;
         protected float stickyThrottle;
         #endregion
@@ -49,6 +51,10 @@ namespace PlaneFlight
         public float StickyThrottle
         {
             get { return stickyThrottle; }
+        }
+        public bool Shooting
+        {
+            get { return shooting; }
         }
         #endregion
 
@@ -90,6 +96,16 @@ namespace PlaneFlight
             }
 
             flaps = Mathf.Clamp(flaps, 0, maxFlapIncrements);
+
+            //Shooting Inputs
+            if (Input.GetButton("Fire1"))
+            {
+                shooting = true;
+            }
+            else
+            {
+                shooting = false;
+            }
         }
 
         protected void StickyThrottleControl()

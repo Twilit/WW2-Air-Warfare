@@ -32,6 +32,16 @@ namespace PlaneFlight
             }
 
             flaps = Mathf.Clamp(flaps, 0, maxFlapIncrements);
+
+            //Shooting Inputs
+            if (Input.GetAxis("Fire1") > 0.9f)
+            {
+                shooting = true;
+            }
+            else
+            {
+                shooting = false;
+            }
         }
     }
 }
