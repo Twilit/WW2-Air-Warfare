@@ -381,6 +381,7 @@ MonoBehaviour:
   guns:
   - {fileID: 5630041604826949225}
   - {fileID: 5753508426393631743}
+  explosion: {fileID: 1404802046468498, guid: 2938def9583039b498280fae52bf6fd4, type: 3}
 --- !u!1 &3335798995968774540
 GameObject:
   m_ObjectHideFlags: 0
@@ -645,7 +646,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
@@ -5900,7 +5901,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1

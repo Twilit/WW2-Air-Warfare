@@ -8,6 +8,7 @@ public class Shooting : MonoBehaviour
     [Header("Gun Properties")]
     public float damage = 10f;
     public Transform[] guns;
+    public GameObject explosion;
     #endregion
 
     #region BuiltIn Methods
@@ -46,7 +47,10 @@ public class Shooting : MonoBehaviour
 
             if (Physics.Raycast(gun.position, gun.forward, out hit))
             {
-
+                if (explosion)
+                {
+                    Instantiate(explosion, hit.point, Quaternion.LookRotation(hit.normal));
+                }
             }
         }
     }
