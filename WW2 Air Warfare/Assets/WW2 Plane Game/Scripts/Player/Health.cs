@@ -42,6 +42,7 @@ public class Health : MonoBehaviour
     //using IsDead to get the result of the code current health <=0
 
 
+
     public void Damage(int damageValue)
     {
         CurrentHealth -= damageValue;
