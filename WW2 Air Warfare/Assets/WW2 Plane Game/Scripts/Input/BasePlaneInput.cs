@@ -61,6 +61,8 @@ namespace PlaneFlight
         void Update()
         {
             HandleInput();
+            StickyThrottleControl();
+            ClampInputs();
         }
         #endregion
 
@@ -72,7 +74,6 @@ namespace PlaneFlight
             roll = Input.GetAxis("Horizontal");
             yaw = Input.GetAxis("Yaw");
             throttle = Input.GetAxis("Throttle");
-            StickyThrottleControl();
 
             //Brake Inputs
             brake = Input.GetButton("Brake")? 1f : 0f;
@@ -95,6 +96,14 @@ namespace PlaneFlight
         {
             stickyThrottle = stickyThrottle + (throttle * throttleSpeed * Time.deltaTime);
             stickyThrottle = Mathf.Clamp01(stickyThrottle);
+        }
+
+        protected void ClampInputs()
+        {
+            pitch = Mathf.Clamp(pitch, -1f, 1f);
+            roll = Mathf.Clamp(roll, -1f, 1f);
+            yaw = Mathf.Clamp(yaw, -1f, 1f);
+            throttle = Mathf.Clamp(throttle, -1f, 1f);
         }
         #endregion
     }

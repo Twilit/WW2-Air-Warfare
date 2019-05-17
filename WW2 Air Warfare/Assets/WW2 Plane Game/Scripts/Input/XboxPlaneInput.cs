@@ -8,12 +8,14 @@ namespace PlaneFlight
     {
         protected override void HandleInput()
         {
+            //Keyboard
+            base.HandleInput();
+
             //Main Inputs
-            pitch = Input.GetAxis("Vertical");
-            roll = Input.GetAxis("Horizontal");
-            yaw = Input.GetAxis("XboxRStickH");
-            throttle = Input.GetAxis("XboxRStickV");
-            StickyThrottleControl();
+            pitch += Input.GetAxis("Vertical");
+            roll += Input.GetAxis("Horizontal");
+            yaw += Input.GetAxis("XboxRStickH");
+            throttle += Input.GetAxis("XboxRStickV");
 
             //Brake Inputs
             brake = Input.GetButton("Brake") ? 1f : 0f;
