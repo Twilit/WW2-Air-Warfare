@@ -16,6 +16,7 @@ namespace PlaneFlight
         public AudioSource gunshotSound;
 
         private float fireDelay = 0f;
+        private LineRenderer tracer;
         #endregion
 
         #region BuiltIn Methods
@@ -48,6 +49,7 @@ namespace PlaneFlight
             foreach (Transform gun in guns)
             {
                 ParticleSystem muzzleFlash = gun.GetComponent<ParticleSystem>();
+                tracer = gun.GetComponent<LineRenderer>();
 
                 if (muzzleFlash)
                 {
@@ -61,8 +63,12 @@ namespace PlaneFlight
 
                 RaycastHit hit;
 
+                tracer.SetPosition(0, gun.position);
+
                 if (Physics.Raycast(gun.position, gun.forward, out hit))
                 {
+                    tracer.SetPosition(1, hit.point);
+
                     if (explosion)
                     {
                         GameObject impactGameObject = Instantiate(explosion, hit.point, Quaternion.LookRotation(hit.normal));
@@ -70,6 +76,25 @@ namespace PlaneFlight
                         Destroy(impactGameObject, 5f);
                     }
                 }
+                else
+                {
+                    tracer.SetPosition(1, gun.position + gun.forward * 1000);
+                }
+
+                StartCoroutine("DrawTracer");
+            }
+        }
+
+        IEnumerator DrawTracer()
+        {
+            tracer.enabled = true;
+
+            yield return new WaitForSeconds(0.01f);
+
+            foreach (Transform gun in guns)
+            {
+                tracer = gun.GetComponent<LineRenderer>();
+                tracer.enabled = false;
             }
         }
         #endregion
