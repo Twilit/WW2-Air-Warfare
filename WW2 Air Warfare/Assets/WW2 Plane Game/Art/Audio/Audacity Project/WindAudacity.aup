@@ -1,0 +1,55 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="WindAudacity_data" version="1.3.0" audacityversion="2.2.2" sel0="0.0000000000" sel1="7.4812925170" vpos="0" h="0.0000000000" zoom="48.3872788010" rate="44100.0" snapto="off" selectionformat="hh:mm:ss + milliseconds" frequencyformat="Hz" bandwidthformat="octaves">
+	<tags>
+		<tag name="Encoded by" value="LAME in FL Studio 12"/>
+		<tag name="BPM (beats per minute)" value="140"/>
+		<tag name="YEAR" value="2017"/>
+	</tags>
+	<wavetrack name="strong wind blowing" channel="0" linked="1" mute="0" solo="0" height="150" minimized="0" isSelected="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="277065">
+				<waveblock start="0">
+					<simpleblockfile filename="e080829a.au" len="164051" min="-0.160334" max="0.163918" rms="0.037343"/>
+				</waveblock>
+				<waveblock start="164051">
+					<simpleblockfile filename="e0808ff9.au" len="113014" min="-0.140172" max="0.091945" rms="0.020626"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="strong wind blowing" channel="1" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="277065">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808fee.au" len="164051" min="-0.14923" max="0.148341" rms="0.037045"/>
+				</waveblock>
+				<waveblock start="164051">
+					<simpleblockfile filename="e0808ef4.au" len="113014" min="-0.100993" max="0.087966" rms="0.019838"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="strong wind blowing" channel="0" linked="1" mute="0" solo="0" height="150" minimized="0" isSelected="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="3.71997732" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="165874">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808375.au" len="165874" min="-0.176049" max="0.160517" rms="0.038347"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="strong wind blowing" channel="1" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="3.71997732" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="165874">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808147.au" len="165874" min="-0.158064" max="0.158633" rms="0.037121"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>
