@@ -13,6 +13,7 @@ namespace PlaneFlight
         public BasePlaneInput input;
         public Transform[] guns;
         public GameObject explosion;
+        public AudioSource gunshotSound;
 
         private float fireDelay = 0f;
         #endregion
@@ -51,6 +52,11 @@ namespace PlaneFlight
                 if (muzzleFlash)
                 {
                     muzzleFlash.Play();
+                }
+
+                if (gunshotSound)
+                {
+                    gunshotSound.Play();
                 }
 
                 RaycastHit hit;
