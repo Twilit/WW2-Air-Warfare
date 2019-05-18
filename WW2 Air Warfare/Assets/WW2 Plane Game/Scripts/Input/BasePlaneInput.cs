@@ -18,6 +18,7 @@ namespace PlaneFlight
         protected int flaps = 0;
 
         protected bool shooting = false;
+        protected bool bombDrop = false;
 
         public float throttleSpeed = 0.1f;
         protected float stickyThrottle;
@@ -55,6 +56,18 @@ namespace PlaneFlight
         public bool Shooting
         {
             get { return shooting; }
+        }
+        public bool BombDrop
+        {
+            get
+            {
+                return bombDrop;
+            }
+
+            set
+            {
+                bombDrop = false;
+            }
         }
         #endregion
 
@@ -105,6 +118,12 @@ namespace PlaneFlight
             else
             {
                 shooting = false;
+            }
+
+            //Bombing Input
+            if (Input.GetButtonDown("Fire2"))
+            {
+                bombDrop = true;
             }
         }
 

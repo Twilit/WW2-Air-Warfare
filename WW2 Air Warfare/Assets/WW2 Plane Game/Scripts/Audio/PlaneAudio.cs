@@ -45,7 +45,7 @@ namespace PlaneFlight
         #region Custom Methods
         protected virtual void HandleAudio()
         {
-            finalVolumeValue = Mathf.Lerp(0f, 0.8f, input.StickyThrottle);
+            finalVolumeValue = Mathf.Lerp(0f, 0.7f, input.StickyThrottle);
             finalWindVolumeValue = Mathf.Lerp(0f, 1f, characteristics.mph/characteristics.maxMPH);
             finalPitchValue = Mathf.Lerp(1f, maxPitchValue, input.StickyThrottle);
 
