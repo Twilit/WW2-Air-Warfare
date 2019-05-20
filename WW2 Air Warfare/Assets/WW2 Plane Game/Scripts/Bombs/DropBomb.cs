@@ -9,6 +9,9 @@ namespace PlaneFlight
         #region Variables
         public BasePlaneInput input;
         public GameObject bomb;
+        public float dropRate = 1f;
+
+        private float dropDelay = 0f;
         #endregion
 
         #region BuiltIn Methods
@@ -21,9 +24,10 @@ namespace PlaneFlight
         {
             if (input)
             {
-                if (input.BombDrop)
+                if (input.BombDrop && Time.time >= dropDelay)
                 {
                     input.BombDrop = false;
+                    dropDelay = Time.time + 1f / dropRate;
 
                     HandleBombing();
                 }
