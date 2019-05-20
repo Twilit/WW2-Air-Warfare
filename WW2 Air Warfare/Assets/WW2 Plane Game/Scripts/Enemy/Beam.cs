@@ -16,10 +16,10 @@ public class Beam : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.transform.root.tag == "Player")
         {
             print("Hit");
-            other.GetComponent<Rigidbody>().AddForce(transform.forward);
+            other.transform.root.GetComponent<Rigidbody>().AddForce(transform.forward*100);
         }
     }
 }

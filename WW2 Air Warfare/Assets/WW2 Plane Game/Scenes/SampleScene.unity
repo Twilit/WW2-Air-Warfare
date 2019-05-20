@@ -2861,11 +2861,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: English_Plane
       objectReference: {fileID: 0}
-    - target: {fileID: 8241180823500549907, guid: 49f85ecec7b54774ebcebefbb88b8801,
-        type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 8241180823500549906, guid: 49f85ecec7b54774ebcebefbb88b8801,
         type: 3}
       propertyPath: m_LocalPosition.x
