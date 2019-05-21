@@ -24,8 +24,8 @@ public class Ammo : MonoBehaviour
 
 
     }
-    void Update() { 
-
+    void Update() {
+        //GetComponent<Rigidbody>().AddForce(new Vector3(100, 0, 0));
     }
 
 
