@@ -31207,7 +31207,7 @@ MonoBehaviour:
   - {fileID: 522556279}
   - {fileID: 1551011891}
   speed: 500
-  turnSpeed: 500
+  turnSpeed: 2.5
 --- !u!1001 &1250521675
 PrefabInstance:
   m_ObjectHideFlags: 0

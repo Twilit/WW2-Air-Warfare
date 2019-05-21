@@ -31,7 +31,7 @@ public class waypoint : MonoBehaviour
 
         //transform.LookAt(transform.position + lastPos - transform.position);
 
-        transform.rotation = Quaternion.LookRotation(Vector3.RotateTowards(transform.forward, newDir, turnSpeed * Time.deltaTime, 0.0f));
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(newDir), Time.deltaTime * turnSpeed);
 
         lastPos = transform.position;
     }
