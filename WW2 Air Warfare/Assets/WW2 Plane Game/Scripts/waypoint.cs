@@ -7,6 +7,7 @@ public class waypoint : MonoBehaviour
     int current = 0;
     public GameObject[] Waypoints;
     public float speed;
+    public bool repeat = true;
     float Wpradius = 1;
 
     Vector3 lastPos;
@@ -19,7 +20,7 @@ public class waypoint : MonoBehaviour
         if (Vector3.Distance(Waypoints[current].transform.position, transform.position) < Wpradius)
         {
             current++;
-            if (current >= Waypoints.Length)
+            if (current >= Waypoints.Length && repeat == true)
             {
                 current = 0;
             }
