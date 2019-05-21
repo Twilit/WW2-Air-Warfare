@@ -19,7 +19,8 @@ public class Beam : MonoBehaviour
         if (other.transform.root.tag == "Player")
         {
             print("Hit");
-            other.transform.root.GetComponent<Rigidbody>().AddForce(transform.forward*100);
+            other.transform.root.GetComponent<Rigidbody>().AddForce(transform.forward*300000);
+            other.transform.root.GetComponent<Rigidbody>().AddTorque(transform.up * 130000);
         }
     }
 }

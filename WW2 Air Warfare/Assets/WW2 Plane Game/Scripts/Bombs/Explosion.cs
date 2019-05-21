@@ -22,7 +22,7 @@ public class Explosion : MonoBehaviour
 
         foreach(Collider entity in entitiesWithInRange)
         {
-            print(entity.name);
+            print("Bombed: " + entity.name);
             
             //Deal Damage
         }
