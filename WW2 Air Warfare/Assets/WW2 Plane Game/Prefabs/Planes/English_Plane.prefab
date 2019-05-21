@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1896365777037685007}
   m_Layer: 0
   m_Name: LeftWingTip
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 3435284208355277272}
   m_Layer: 0
   m_Name: RightAileron
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -186,7 +186,7 @@ GameObject:
   - component: {fileID: 3398482427280290085}
   m_Layer: 0
   m_Name: RightElevator
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -233,7 +233,7 @@ GameObject:
   - component: {fileID: 614573956688959892}
   m_Layer: 0
   m_Name: CoG
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -264,7 +264,7 @@ GameObject:
   - component: {fileID: 7887639264430393264}
   m_Layer: 0
   m_Name: Wind Audio
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -391,7 +391,7 @@ GameObject:
   - component: {fileID: 1794958372667859041}
   m_Layer: 0
   m_Name: Rudder
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -438,7 +438,7 @@ GameObject:
   - component: {fileID: 95298654756112595}
   m_Layer: 0
   m_Name: RightAileronModel
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -470,7 +470,7 @@ GameObject:
   - component: {fileID: 4821761689293619112}
   m_Layer: 0
   m_Name: Guns
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -523,7 +523,7 @@ GameObject:
   - component: {fileID: 5668250885436037838}
   m_Layer: 0
   m_Name: LeftElevator
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -571,7 +571,7 @@ GameObject:
   - component: {fileID: 5130556448715625314}
   m_Layer: 0
   m_Name: Propeller
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -625,7 +625,7 @@ GameObject:
   - component: {fileID: 8685277627856264409}
   m_Layer: 0
   m_Name: WingTips
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -672,7 +672,7 @@ GameObject:
   - component: {fileID: 4229393106897689786}
   m_Layer: 0
   m_Name: LeftAileronModel
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -704,7 +704,7 @@ GameObject:
   - component: {fileID: 7388549045232772896}
   m_Layer: 0
   m_Name: LeftAileron
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -751,7 +751,7 @@ GameObject:
   - component: {fileID: 2257218275470688714}
   m_Layer: 0
   m_Name: ControlSurfaces
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -787,7 +787,7 @@ GameObject:
   - component: {fileID: 3837751744062405385}
   m_Layer: 0
   m_Name: BombHolder
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -820,6 +820,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   input: {fileID: 3387501866299537357}
   bomb: {fileID: 2576021195397279171, guid: a13b7741369478746a8c24e915f390e3, type: 3}
+  dropRate: 1
 --- !u!1 &5501446741817798609
 GameObject:
   m_ObjectHideFlags: 0
@@ -834,7 +835,7 @@ GameObject:
   - component: {fileID: 9214156459491635537}
   m_Layer: 0
   m_Name: RightGun
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5738,7 +5739,7 @@ GameObject:
   - component: {fileID: 1839477254820506673}
   m_Layer: 9
   m_Name: PickUpGrabBox
-  m_TagString: PlayerGrabBox
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5782,7 +5783,7 @@ GameObject:
   - component: {fileID: 4303279679407743839}
   m_Layer: 0
   m_Name: Idle Audio
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5909,7 +5910,7 @@ GameObject:
   - component: {fileID: 6672847749068586715}
   m_Layer: 0
   m_Name: Engine
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5979,7 +5980,7 @@ GameObject:
   - component: {fileID: 7531830026248925650}
   m_Layer: 0
   m_Name: Gun Audio
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6107,7 +6108,7 @@ GameObject:
   - component: {fileID: 8167009244837803855}
   m_Layer: 0
   m_Name: BlurPropeller
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6183,7 +6184,7 @@ GameObject:
   - component: {fileID: 5126939994547261913}
   m_Layer: 0
   m_Name: Full Throttle Audio
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6312,7 +6313,7 @@ GameObject:
   - component: {fileID: 2633673498014566543}
   m_Layer: 0
   m_Name: LeftGun
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11217,7 +11218,7 @@ GameObject:
   - component: {fileID: 8217503861933851918}
   m_Layer: 0
   m_Name: SM_Veh_Plane_England_01_Wheel_r
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11294,7 +11295,7 @@ GameObject:
   - component: {fileID: 8218424549987676156}
   m_Layer: 0
   m_Name: SM_Veh_Plane_England_01_Flap_Tail
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11371,7 +11372,7 @@ GameObject:
   - component: {fileID: 8218321249602850160}
   m_Layer: 0
   m_Name: SM_Veh_Plane_England_01_CockPit_Stick
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11446,7 +11447,7 @@ GameObject:
   - component: {fileID: 8236819143894363466}
   m_Layer: 0
   m_Name: group1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11478,7 +11479,7 @@ GameObject:
   - component: {fileID: 8217385401998979460}
   m_Layer: 0
   m_Name: SM_Veh_Plane_England_01_Wheel_l
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11555,7 +11556,7 @@ GameObject:
   - component: {fileID: 8218224935261026930}
   m_Layer: 0
   m_Name: SM_Veh_Plane_England_01_Flap_Tail_lr
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11786,7 +11787,7 @@ GameObject:
   - component: {fileID: 8217829642408225406}
   m_Layer: 0
   m_Name: SM_Veh_Plane_England_01_CockPit
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11864,7 +11865,7 @@ GameObject:
   - component: {fileID: 8218171892356308526}
   m_Layer: 0
   m_Name: SM_Veh_Plane_England_01_Glass
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11941,7 +11942,7 @@ GameObject:
   - component: {fileID: 8217803323790117594}
   m_Layer: 0
   m_Name: SM_Veh_Plane_England_01_Flap_Tail_rr
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12019,7 +12020,7 @@ GameObject:
   - component: {fileID: 8290377595238291450}
   m_Layer: 0
   m_Name: SM_Veh_Plane_England_01
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12124,7 +12125,7 @@ GameObject:
   - component: {fileID: 8241180823067685713}
   m_Layer: 0
   m_Name: Wheels
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12159,7 +12160,7 @@ GameObject:
   - component: {fileID: 476256026382650873}
   m_Layer: 0
   m_Name: BackWheel
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12546,7 +12547,7 @@ GameObject:
   - component: {fileID: 8241180823634169723}
   m_Layer: 0
   m_Name: Colliders
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12587,7 +12588,7 @@ GameObject:
   - component: {fileID: 6915704553416509301}
   m_Layer: 0
   m_Name: LeftFrontWheel
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12666,7 +12667,7 @@ GameObject:
   - component: {fileID: 8241180823804966058}
   m_Layer: 0
   m_Name: RightHorizontalStabiliser
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12709,7 +12710,7 @@ GameObject:
   - component: {fileID: 8241180824111841333}
   m_Layer: 0
   m_Name: Model
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12741,7 +12742,7 @@ GameObject:
   - component: {fileID: 8241180824153832058}
   m_Layer: 0
   m_Name: BackBody
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12786,7 +12787,7 @@ GameObject:
   - component: {fileID: 8241180824404174509}
   m_Layer: 0
   m_Name: Cockpit
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12831,7 +12832,7 @@ GameObject:
   - component: {fileID: 8241180824605355165}
   m_Layer: 0
   m_Name: RightWing
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12875,7 +12876,7 @@ GameObject:
   - component: {fileID: 8241180824763705714}
   m_Layer: 0
   m_Name: LeftHorizontalStabiliser
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12920,7 +12921,7 @@ GameObject:
   - component: {fileID: 6296596549854166994}
   m_Layer: 0
   m_Name: RightFrontWheel
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12999,7 +13000,7 @@ GameObject:
   - component: {fileID: 8241180824835003857}
   m_Layer: 0
   m_Name: FrontBody
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13044,7 +13045,7 @@ GameObject:
   - component: {fileID: 8241180824919490660}
   m_Layer: 0
   m_Name: LeftWing
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13088,7 +13089,7 @@ GameObject:
   - component: {fileID: 8241180825045315727}
   m_Layer: 0
   m_Name: VerticalStabiliser
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13132,7 +13133,7 @@ GameObject:
   - component: {fileID: 6792760402739942518}
   m_Layer: 0
   m_Name: Audio Group
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13185,7 +13186,7 @@ GameObject:
   - component: {fileID: 9168792098173213150}
   m_Layer: 0
   m_Name: RightWingTip
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13315,6 +13316,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 282302426313917675, guid: ea9db78c984db5d4f84f8d9c8d395688,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 287669164655190759, guid: ea9db78c984db5d4f84f8d9c8d395688,
         type: 3}
