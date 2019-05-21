@@ -5941,7 +5941,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99439f8de3b9305459fd8be5e5607356, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxForce: 8000
+  maxForce: 12000
   maxRPM: 3000
   powerCurve:
     serializedVersion: 2
@@ -12295,7 +12295,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8241180823500549907}
   serializedVersion: 2
-  m_Mass: 800
+  m_Mass: 1200
   m_Drag: 0.07
   m_AngularDrag: 0.025
   m_UseGravity: 1
@@ -12414,7 +12414,7 @@ MonoBehaviour:
   input: {fileID: 3387501866299537357}
   characteristics: {fileID: 5369622559511847281}
   centreOfGravity: {fileID: 614573956688959892}
-  planeWeight: 1000
+  planeWeight: 800
   engines:
   - {fileID: 6672847749068586715}
   wheels:
@@ -12441,9 +12441,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forwardSpeed: 0
   mph: 0
-  maxMPH: 150
-  rbLerpSpeed: 0.03
-  maxLiftPower: 5000
+  maxMPH: 180
+  rbLerpSpeed: 0.025
+  maxLiftPower: 7000
   liftCurve:
     serializedVersion: 2
     m_Curve:
@@ -12457,8 +12457,8 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.7181319
-      value: 0.860723
+      time: 0.23754108
+      value: 0.5169349
       inSlope: 3.0088947
       outSlope: 3.0088947
       tangentMode: 0
@@ -12478,8 +12478,8 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   dragFactor: 0.0004
-  pitchSpeed: 4100
-  rollSpeed: 6400
+  pitchSpeed: 3400
+  rollSpeed: 4400
   yawSpeed: 1900
   controlSurfaceEfficiency:
     serializedVersion: 2
@@ -13307,21 +13307,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5661042781058184146}
     m_Modifications:
-    - target: {fileID: 282302426313917675, guid: ea9db78c984db5d4f84f8d9c8d395688,
-        type: 3}
-      propertyPath: m_Name
-      value: SM_Veh_Plane_England_01_Prop
-      objectReference: {fileID: 0}
-    - target: {fileID: 282302426313917675, guid: ea9db78c984db5d4f84f8d9c8d395688,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 282302426313917675, guid: ea9db78c984db5d4f84f8d9c8d395688,
-        type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 287669164655190759, guid: ea9db78c984db5d4f84f8d9c8d395688,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13376,6 +13361,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 282302426313917675, guid: ea9db78c984db5d4f84f8d9c8d395688,
+        type: 3}
+      propertyPath: m_Name
+      value: SM_Veh_Plane_England_01_Prop
+      objectReference: {fileID: 0}
+    - target: {fileID: 282302426313917675, guid: ea9db78c984db5d4f84f8d9c8d395688,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 282302426313917675, guid: ea9db78c984db5d4f84f8d9c8d395688,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea9db78c984db5d4f84f8d9c8d395688, type: 3}
