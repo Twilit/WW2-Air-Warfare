@@ -1,8 +1,96 @@
 fileFormatVersion: 2
 guid: 086e4c1761ab0804abba1964f14797f1
 ModelImporter:
-  serializedVersion: 25
-  internalIDToNameTable: []
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Cylinder001
+    100002: Cylinder003
+    100004: Cylinder004
+    100006: Cylinder006
+    100008: Cylinder007
+    100010: //RootNode
+    100012: Pyramid001
+    100014: Torus001
+    100016: Torus002
+    100018: Torus003
+    100020: Torus004
+    100022: Torus005
+    100024: Torus006
+    100026: Torus007
+    100028: Torus008
+    100030: Torus009
+    100032: Torus010
+    400000: Cylinder001
+    400002: Cylinder003
+    400004: Cylinder004
+    400006: Cylinder006
+    400008: Cylinder007
+    400010: //RootNode
+    400012: Pyramid001
+    400014: Torus001
+    400016: Torus002
+    400018: Torus003
+    400020: Torus004
+    400022: Torus005
+    400024: Torus006
+    400026: Torus007
+    400028: Torus008
+    400030: Torus009
+    400032: Torus010
+    2100000: 09 - Default
+    2100002: 'Material #47'
+    2100004: 03 - Default
+    2100006: 14 - Default
+    2100008: 13 - Default
+    2100010: 'Material #147'
+    2300000: Cylinder001
+    2300002: Cylinder003
+    2300004: Cylinder004
+    2300006: Cylinder006
+    2300008: Cylinder007
+    2300010: Pyramid001
+    2300012: Torus001
+    2300014: Torus002
+    2300016: Torus003
+    2300018: Torus004
+    2300020: Torus005
+    2300022: Torus006
+    2300024: Torus007
+    2300026: Torus008
+    2300028: Torus009
+    2300030: Torus010
+    3300000: Cylinder001
+    3300002: Cylinder003
+    3300004: Cylinder004
+    3300006: Cylinder006
+    3300008: Cylinder007
+    3300010: Pyramid001
+    3300012: Torus001
+    3300014: Torus002
+    3300016: Torus003
+    3300018: Torus004
+    3300020: Torus005
+    3300022: Torus006
+    3300024: Torus007
+    3300026: Torus008
+    3300028: Torus009
+    3300030: Torus010
+    4300000: Cylinder001
+    4300002: Torus001
+    4300004: Torus002
+    4300006: Torus003
+    4300008: Torus004
+    4300010: Torus005
+    4300012: Torus006
+    4300014: Cylinder003
+    4300016: Cylinder004
+    4300018: Torus007
+    4300020: Torus008
+    4300022: Torus009
+    4300024: Torus010
+    4300026: Cylinder006
+    4300028: Cylinder007
+    4300030: Pyramid001
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -45,19 +133,18 @@ ModelImporter:
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
+    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
-    skinWeightsMode: 0
-    maxBonesPerVertex: 4
-    minBoneWeight: 0.001
-    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -66,11 +153,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips: []
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
-    serializedVersion: 3
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -80,7 +166,6 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
