@@ -11,7 +11,7 @@ public class Beam : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(Vector3.forward * Time.deltaTime * 1000f);
+        transform.Translate(Vector3.forward * Time.deltaTime * 2300f);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -19,7 +19,7 @@ public class Beam : MonoBehaviour
         if (other.transform.root.tag == "Player")
         {
             print("Hit");
-            other.transform.root.GetComponent<Rigidbody>().AddForce(transform.forward*300000);
+            other.transform.root.GetComponent<Rigidbody>().AddForce(transform.forward*500000);
             other.transform.root.GetComponent<Rigidbody>().AddTorque(transform.up * 130000);
         }
     }

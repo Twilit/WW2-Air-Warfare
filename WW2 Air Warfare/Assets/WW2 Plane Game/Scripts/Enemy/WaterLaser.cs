@@ -27,7 +27,7 @@ public class WaterLaser : MonoBehaviour
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(player.position - transform.position), Time.deltaTime * trackingSpeed);
 
             Instantiate(beam, transform.position, transform.rotation);
-            yield return new WaitForSeconds(0.7f);
+            yield return new WaitForSeconds(3f);
         }
     }
 }
