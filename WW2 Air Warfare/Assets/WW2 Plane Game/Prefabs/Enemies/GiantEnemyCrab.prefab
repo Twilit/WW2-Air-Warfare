@@ -140,7 +140,7 @@ MonoBehaviour:
   beam: {fileID: 2063768575128205858, guid: 7afaa48831296a446b6a557479755df4, type: 3}
   player: {fileID: 0}
   shootingBeam: 0
-  trackingSpeed: 70
+  trackingSpeed: 65
 --- !u!1 &7665870348973502007
 GameObject:
   m_ObjectHideFlags: 0
