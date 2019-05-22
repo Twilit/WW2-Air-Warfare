@@ -6,6 +6,7 @@ public class RegularBomb : MonoBehaviour
 {
     #region Variable
     public bool primed = false;
+    public AudioSource whistle;
     public GameObject explosion;
 
     private CapsuleCollider capCollider;
@@ -15,7 +16,7 @@ public class RegularBomb : MonoBehaviour
     void Start()
     {
         capCollider = GetComponent<CapsuleCollider>();
-
+        whistle.Play();
         Invoke("PrimeBomb", 0.4f);
     }
 
@@ -26,6 +27,7 @@ public class RegularBomb : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        whistle.Stop();
         Explosion();
     }
     #endregion

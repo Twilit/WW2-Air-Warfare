@@ -9,6 +9,7 @@ namespace PlaneFlight
         #region Variables
         public BasePlaneInput input;
         public GameObject bomb;
+        public AudioSource bombDropAudio;
         public float dropRate = 1f;
 
         private float dropDelay = 0f;
@@ -38,6 +39,7 @@ namespace PlaneFlight
         #region Custom Methods
         void HandleBombing()
         {
+            bombDropAudio.Play();
             Instantiate(bomb, transform.position, Quaternion.Euler(new Vector3 (transform.eulerAngles.x, transform.eulerAngles.y -180, transform.eulerAngles.z)));
         }
         #endregion
