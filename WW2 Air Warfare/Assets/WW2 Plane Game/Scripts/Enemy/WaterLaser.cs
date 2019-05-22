@@ -6,6 +6,7 @@ public class WaterLaser : MonoBehaviour
 {
     public GameObject beam;
     public Transform player;
+    public AudioSource spit;
     public bool shootingBeam;
     public float trackingSpeed = 10f;
 
@@ -27,6 +28,7 @@ public class WaterLaser : MonoBehaviour
 
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(player.position - transform.position), Time.deltaTime * trackingSpeed);
 
+            spit.Play();
             Instantiate(beam, transform.position, transform.rotation);
             yield return new WaitForSeconds(3f);
         }
