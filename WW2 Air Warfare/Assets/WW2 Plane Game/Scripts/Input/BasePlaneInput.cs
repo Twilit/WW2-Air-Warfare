@@ -20,6 +20,8 @@ namespace PlaneFlight
         protected bool shooting = false;
         protected bool bombDrop = false;
 
+        protected bool topCam = false;
+
         public float throttleSpeed = 0.1f;
         protected float stickyThrottle;
         #endregion
@@ -68,6 +70,10 @@ namespace PlaneFlight
             {
                 bombDrop = false;
             }
+        }
+        public bool TopCam
+        {
+            get { return topCam; }
         }
         #endregion
 
@@ -124,6 +130,16 @@ namespace PlaneFlight
             if (Input.GetButtonDown("Fire2"))
             {
                 bombDrop = true;
+            }
+
+            //Camera Switch Input
+            if (Input.GetButton("CamSwitch"))
+            {
+                topCam = true;
+            }
+            else
+            {
+                topCam = false;
             }
         }
 
