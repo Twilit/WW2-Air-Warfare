@@ -55104,6 +55104,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1000
       objectReference: {fileID: 0}
+    - target: {fileID: 139224587529093164, guid: d1b293444b250ab4893f39afa0d2f953,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2963
+      objectReference: {fileID: 0}
+    - target: {fileID: 2923128258223327885, guid: d1b293444b250ab4893f39afa0d2f953,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1823906867}
+    - target: {fileID: 7546657970057351037, guid: d1b293444b250ab4893f39afa0d2f953,
+        type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d1b293444b250ab4893f39afa0d2f953, type: 3}
 --- !u!1 &1250498209 stripped
