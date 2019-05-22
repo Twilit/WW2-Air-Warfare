@@ -55063,6 +55063,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1823906867}
+    - target: {fileID: 2923128258223327885, guid: d1b293444b250ab4893f39afa0d2f953,
+        type: 3}
+      propertyPath: shootingBeam
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7546657970057351037, guid: d1b293444b250ab4893f39afa0d2f953,
         type: 3}
       propertyPath: m_Convex
