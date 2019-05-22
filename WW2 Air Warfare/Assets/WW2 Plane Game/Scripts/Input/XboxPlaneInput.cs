@@ -18,7 +18,14 @@ namespace PlaneFlight
             throttle += Input.GetAxis("XboxRStickV");
 
             //Brake Inputs
-            brake = Input.GetButton("Brake") ? 1f : 0f;
+            if (Input.GetAxis("Brake") > 0.9f)
+            {
+                brake = 1;
+            }
+            else
+            {
+                brake = 0;
+            }
 
             //Flap Inputs
             if (Input.GetButtonDown("FlapUp"))

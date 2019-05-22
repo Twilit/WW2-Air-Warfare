@@ -10,14 +10,18 @@ public class RegularBomb : MonoBehaviour
     public GameObject explosion;
 
     private CapsuleCollider capCollider;
+    private Rigidbody rb;
     #endregion
 
     #region BuiltIn Methods
     void Start()
     {
         capCollider = GetComponent<CapsuleCollider>();
+        rb = GetComponent<Rigidbody>();
         whistle.Play();
         Invoke("PrimeBomb", 0.4f);
+
+        rb.AddForce(Vector3.down * 60000);
     }
 
     void Update()

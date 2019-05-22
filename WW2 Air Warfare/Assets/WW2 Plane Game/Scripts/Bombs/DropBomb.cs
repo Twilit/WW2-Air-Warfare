@@ -40,7 +40,8 @@ namespace PlaneFlight
         void HandleBombing()
         {
             bombDropAudio.Play();
-            Instantiate(bomb, transform.position, Quaternion.Euler(new Vector3 (transform.eulerAngles.x, transform.eulerAngles.y -180, transform.eulerAngles.z)));
+            GameObject droppedBomb = Instantiate(bomb, transform.position, Quaternion.Euler(new Vector3 (transform.eulerAngles.x, transform.eulerAngles.y -180, transform.eulerAngles.z)));
+            droppedBomb.GetComponent<Rigidbody>().velocity = input.gameObject.GetComponent<Rigidbody>().velocity;
         }
         #endregion
     }
