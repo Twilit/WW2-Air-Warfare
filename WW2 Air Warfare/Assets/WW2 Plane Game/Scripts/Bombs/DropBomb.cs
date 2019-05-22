@@ -32,6 +32,10 @@ namespace PlaneFlight
 
                     HandleBombing();
                 }
+                else if (input.BombDrop && Time.time < dropDelay)
+                {
+                    input.BombDrop = false;
+                }
             }
         }
         #endregion
