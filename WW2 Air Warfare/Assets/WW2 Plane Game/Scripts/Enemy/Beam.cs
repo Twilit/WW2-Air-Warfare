@@ -9,6 +9,8 @@ public class Beam : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform.root;
+
+        Invoke("Decay", 5f);
     }
 
     void Update()
@@ -22,9 +24,14 @@ public class Beam : MonoBehaviour
         if (other.transform.root.tag == "Player")
         {
             print("Hit");
-            other.transform.root.GetComponent<Rigidbody>().AddForce(transform.forward*500000);
+            other.transform.root.GetComponent<Rigidbody>().AddForce(transform.right*500000);
             other.transform.root.GetComponent<Rigidbody>().AddTorque(transform.up * 130000);
             Destroy(gameObject);
         }
+    }
+
+    void Decay()
+    {
+        Destroy(gameObject);
     }
 }

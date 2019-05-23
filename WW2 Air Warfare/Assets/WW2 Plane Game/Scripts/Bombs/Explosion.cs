@@ -24,7 +24,10 @@ public class Explosion : MonoBehaviour
         {
             print("Bombed: " + entity.name);
             
-            //Deal Damage
+            if (entity.tag == "Enemy")
+            {
+                entity.GetComponent<CrabHealth>().DealDamage(60);
+            }
         }
     }
 }
