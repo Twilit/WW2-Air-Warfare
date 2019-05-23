@@ -14,7 +14,7 @@ namespace PlaneFlight
         public Transform[] guns;
         public GameObject explosion;
         public AudioSource gunshotSound;
-
+        public GunsAmmo ammo;
         private float fireDelay = 0f;
         private LineRenderer tracer;
         #endregion
@@ -22,22 +22,28 @@ namespace PlaneFlight
         #region BuiltIn Methods
         void Start()
         {
-
+            ammo = transform.root.GetComponent<GunsAmmo>();
         }
 
         void Update()
         {
             if (input)
             {
-                if (input.Shooting && Time.time >= fireDelay)
+                if (ammo.HasAmmo)
                 {
-                    fireDelay = Time.time + 1f / fireRate;
-                    ShootGuns();
-                }
+                    if (input.Shooting && Time.time >= fireDelay)
+                    {
+                        fireDelay = Time.time + 1f / fireRate;
+                        if (ammo.HasAmmo)
+                        {
+                            ShootGuns();
+                        }
+                    }
 
-                if (Input.GetButtonDown("Fire2"))
-                {
+                    if (Input.GetButtonDown("Fire2"))
+                    {
 
+                    }
                 }
             }
         }

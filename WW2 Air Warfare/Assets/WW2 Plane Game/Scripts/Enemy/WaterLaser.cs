@@ -25,7 +25,7 @@ public class WaterLaser : MonoBehaviour
     {
         while (shootingBeam)
         {
-
+            if(player)
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(player.position - transform.position), Time.deltaTime * trackingSpeed);
 
             spit.Play();
