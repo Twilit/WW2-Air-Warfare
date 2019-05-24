@@ -38,7 +38,7 @@ public class AmmoPickup : MonoBehaviour
         {
 
             ammo.ChangeGunAmmo(-50);
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 }

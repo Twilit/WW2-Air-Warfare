@@ -35,7 +35,7 @@ public class HealPickup : MonoBehaviour
         {
 
             health.Damage(-50);
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 }
