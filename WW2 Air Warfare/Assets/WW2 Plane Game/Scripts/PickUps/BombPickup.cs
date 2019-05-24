@@ -19,7 +19,7 @@ public class BombPickup : MonoBehaviour
         {
 
             ammo.ChangeBombAmmo(-3);
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 }
