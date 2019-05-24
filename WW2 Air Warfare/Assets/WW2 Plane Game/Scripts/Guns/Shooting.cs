@@ -70,6 +70,18 @@ namespace PlaneFlight
                         hit.transform.GetComponent<CrabHealth>().DealDamage(3);
                         print("Dealt damage");
                     }
+                    else if (hit.transform.tag == "HealthPU")
+                    {
+                        hit.transform.GetComponent<HealPickup>().AddHealth(input.transform.GetComponent<Health>());
+                    }
+                    else if (hit.transform.tag == "AmmoPU")
+                    {
+                        hit.transform.GetComponent<AmmoPickup>().AddAmmo(input.transform.GetComponent<Ammo>());
+                    }
+                    else if (hit.transform.tag == "BombPU")
+                    {
+                        hit.transform.GetComponent<BombPickup>().AddBomb(input.transform.GetComponent<Ammo>());
+                    }
 
                     if (explosion)
                     {
