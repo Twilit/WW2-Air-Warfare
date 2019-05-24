@@ -20,6 +20,7 @@ public class CrabHealth : MonoBehaviour
 
     void Death()
     {
+        GameManager.instance.ShowWinScreen();
         Destroy(gameObject);
     }
 

@@ -12,41 +12,39 @@ public class GameManager : MonoBehaviour {
     public Text timeTxt;
 
     public bool won;
-    
+
     //creating a reffrence to the winpanel and loespannel
     public GameObject losePanel;
     public GameObject winPanel;
 
     public static int amountkilled;
 
+    public static GameManager instance;
 
 
 
     // Use this for initialization
     void Start() {
+
+        if (instance == null)
+            instance = this;
         //winPanel.SetActive(false);
         amountkilled = 0;
-        
-        
+
+        winPanel.SetActive(false);
 
 
 
 
     }
-	
-	// Update is called once per frame
-	void Update () {
 
-            //If the player has survived 180 seconds then the they win
-           
+    // Update is called once per frame
+    void Update() {
 
-        
+    }
 
-
-
-
-
-
-
-    }   
+    public void ShowWinScreen()
+    {
+        winPanel.SetActive(true);
+    }
 }
