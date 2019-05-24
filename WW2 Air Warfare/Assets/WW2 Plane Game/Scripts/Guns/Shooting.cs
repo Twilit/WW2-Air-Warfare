@@ -34,11 +34,6 @@ namespace PlaneFlight
                     fireDelay = Time.time + 1f / fireRate;
                     ShootGuns();
                 }
-
-                if (Input.GetButtonDown("Fire2"))
-                {
-
-                }
             }
         }
         #endregion
@@ -68,6 +63,12 @@ namespace PlaneFlight
                 if (Physics.Raycast(gun.position, gun.forward, out hit))
                 {
                     tracer.SetPosition(1, hit.point);
+
+                    if (hit.transform.tag == "Enemy")
+                    {
+                        hit.transform.GetComponent<CrabHealth>().DealDamage(3);
+                        print("Dealt damage");
+                    }
 
                     if (explosion)
                     {
