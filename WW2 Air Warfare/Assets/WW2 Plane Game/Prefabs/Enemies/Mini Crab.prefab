@@ -4798,10 +4798,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d329231c94865604e9a9709825240eea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crabTarget: {fileID: 0}
-  crabRidgidbody: {fileID: 0}
+  crabRidgidbody: {fileID: 4538880274583926786}
   Turn: 15
-  CrabVelocity: 8
+  CrabVelocity: 1000
 --- !u!54 &4538880274583926786
 Rigidbody:
   m_ObjectHideFlags: 0

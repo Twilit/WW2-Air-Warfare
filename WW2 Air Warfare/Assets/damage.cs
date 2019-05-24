@@ -7,7 +7,7 @@ public class damage : MonoBehaviour
     void OnColliderEnter(Collider collision)
     {
 
-        if (collision.tag == "player")
+        if (collision.tag == "Player")
         {
             var hit = collision.gameObject;
             var health = hit.GetComponent<Health>();
