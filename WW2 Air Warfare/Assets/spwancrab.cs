@@ -4,11 +4,23 @@ using UnityEngine;
 
 public class spwancrab : MonoBehaviour
 {
-    [SerializeField] private Transform crab;
-    [SerializeField] private Transform spwanpoint;
+    public Transform[] SpawnPoints;
+    public float spawnTime = 2f;
 
-    private void OnTriggerEnter(Collider other)
+    public GameObject enemy;
+    private void Start()
     {
-        crab.transform.position = spwanpoint.transform.position;
+        InvokeRepeating("SpawnEnemy", spawnTime, spawnTime);
+
+    }
+    private void Update()
+    {
+
+    }
+    void SpawnEnemy()
+    {
+        int spwanIndex = Random.Range(0, SpawnPoints.Length);
+        Instantiate(enemy, SpawnPoints[spwanIndex].position, SpawnPoints[spwanIndex].rotation);
+
     }
 }

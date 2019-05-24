@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class Homing : MonoBehaviour
 {
-    public Transform crabTarget;
+    private Transform crabTarget;
     public Rigidbody crabRidgidbody;
 
     public float Turn;
     public float CrabVelocity;
+
+    private void Start()
+    {
+        crabTarget = GameObject.FindGameObjectWithTag("Player").transform.root;
+    }
+
     private void FixedUpdate()
     {
         crabRidgidbody.velocity = transform.forward * CrabVelocity;
@@ -38,7 +44,7 @@ public class Homing : MonoBehaviour
 
     private void Update()
     {
-        Destroy(gameObject, 30f);
+        Destroy(gameObject, 90f);
     }
 
 
