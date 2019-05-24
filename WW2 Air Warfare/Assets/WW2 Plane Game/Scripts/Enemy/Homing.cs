@@ -13,6 +13,7 @@ public class Homing : MonoBehaviour
     private void Start()
     {
         crabTarget = GameObject.FindGameObjectWithTag("Player").transform.root;
+        transform.LookAt(crabTarget);
     }
 
     private void FixedUpdate()

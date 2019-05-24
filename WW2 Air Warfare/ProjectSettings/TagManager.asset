@@ -11,6 +11,8 @@ TagManager:
   - BombPU
   - AmmoPU
   - HealthPU
+  - Minicrabs
+  - Bubble
   layers:
   - Default
   - TransparentFX

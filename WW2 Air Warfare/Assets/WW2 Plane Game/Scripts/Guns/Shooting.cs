@@ -90,6 +90,10 @@ namespace PlaneFlight
                     {
                         hit.transform.GetComponent<BombPickup>().AddBomb(input.transform.GetComponent<Ammo>());
                     }
+                    else if (hit.transform.tag == "Bubble" && hit.transform.tag == "Minicrabs")
+                    {
+                        hit.transform.
+                    }
                     else
                     {
                         if (explosion)
