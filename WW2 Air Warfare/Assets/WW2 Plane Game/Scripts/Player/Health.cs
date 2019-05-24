@@ -13,9 +13,6 @@ public class Health : MonoBehaviour
     AudioSource audioSrc;
     [SerializeField] AudioClip deathsound;
 
-    public Renderer rend;
-
-    public GameObject playerCam;
     public GameObject explosionPrefab;
 
     // Use this for initialization
@@ -24,16 +21,14 @@ public class Health : MonoBehaviour
 
         // setting the current health the same as max health at the start of the game
         CurrentHealth = maximumHealth;
-        rend = GetComponentInChildren<Renderer>();
         audioSrc = GetComponent<AudioSource>();
-        rend = GetComponentInChildren<Renderer>();
 
     }
     void Update()
     {
         //print(rend.isVisible);
         //if enemy is dead then and the rendere is not visible destory the enemy
-        if (IsDead && !rend.isVisible)
+        if (IsDead)
         {
             Destroy(gameObject);
         }
@@ -79,7 +74,7 @@ public class Health : MonoBehaviour
                 //playerCam.transform.parent = null;
                 Instantiate(explosionPrefab, transform.position, Quaternion.identity);
                 Destroy(gameObject);
-                    }
+            }
 
 
         }

@@ -23,7 +23,7 @@ public class WaterLaser : MonoBehaviour
 
     IEnumerator ShootLaser()
     {
-        while (true)
+        while (player)
         {
             if (shootingBeam)
             {
