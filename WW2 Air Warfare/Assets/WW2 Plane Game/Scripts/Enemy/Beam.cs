@@ -8,6 +8,7 @@ public class Beam : MonoBehaviour
 
     void Start()
     {
+        if (GameObject.FindGameObjectWithTag("Player"))
         player = GameObject.FindGameObjectWithTag("Player").transform.root;
 
         Invoke("Decay", 5f);
@@ -16,6 +17,7 @@ public class Beam : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector3.forward * Time.deltaTime * 2800f);
+        if(player)
         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(player.position - transform.position), Time.deltaTime * 0.005f);
     }
 

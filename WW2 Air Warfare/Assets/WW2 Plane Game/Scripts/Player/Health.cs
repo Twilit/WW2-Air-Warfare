@@ -15,10 +15,13 @@ public class Health : MonoBehaviour
 
     public Renderer rend;
 
+    public GameObject playerCam;
+    public GameObject explosionPrefab;
+
     // Use this for initialization
     void Start()
     {
-        
+
         // setting the current health the same as max health at the start of the game
         CurrentHealth = maximumHealth;
         rend = GetComponentInChildren<Renderer>();
@@ -41,6 +44,16 @@ public class Health : MonoBehaviour
     public bool IsDead { get { return CurrentHealth <= 0; } }
     //using IsDead to get the result of the code current health <=0
 
+    public int GetHealth()
+    {
+        return CurrentHealth;
+    }
+
+    public int getMaxHealth()
+    {
+        return maximumHealth;
+
+    }
 
 
     public void Damage(int damageValue)
@@ -55,16 +68,21 @@ public class Health : MonoBehaviour
 
             {
                 //seting the boolen for dead as true if the Enemey health is 0
-                
+
                 audioSrc.clip = deathsound;
                 audioSrc.Play();
                 GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = true;
+                
             }
-
+            else
+            {
+                //playerCam.transform.parent = null;
+                Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+                Destroy(gameObject);
+                    }
 
 
         }
 
     }
 }
-

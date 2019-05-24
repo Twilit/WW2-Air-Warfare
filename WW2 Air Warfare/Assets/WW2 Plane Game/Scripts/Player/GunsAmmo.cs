@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ammo : MonoBehaviour
+public class GunsAmmo : MonoBehaviour
 {
 
     [SerializeField] int maximumAmmo = 5;
@@ -29,7 +29,7 @@ public class Ammo : MonoBehaviour
 
 
 
-    public bool HasAmmo { get { return CurrentAmmo >0; } }
+    public bool HasAmmo { get { return CurrentAmmo > 0; } }
     //using IsDead to get the result of the code current health <=0
 
 
@@ -37,10 +37,10 @@ public class Ammo : MonoBehaviour
     {
         CurrentAmmo -= ChangeValue;
         //if the code is equles to or less that 0 then the game object will be destoryed.
-        if(CurrentAmmo < 0)
+        if (CurrentAmmo < 0)
         {
-            CurrentAmmo = 0;        }
+            CurrentAmmo = 0;
+        }
 
     }
 }
-

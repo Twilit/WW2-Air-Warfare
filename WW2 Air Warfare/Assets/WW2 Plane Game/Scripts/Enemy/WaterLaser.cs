@@ -30,7 +30,6 @@ public class WaterLaser : MonoBehaviour
                 Vector3 directionToPlayer = player.position - transform.root.position;
 
                 float angle = Vector3.Angle(transform.forward, directionToPlayer);
-                //print(angle);
 
                 if (Mathf.Abs(angle) < 15f && Vector3.Distance(transform.position, player.position) < 8000)
                 {
@@ -38,8 +37,10 @@ public class WaterLaser : MonoBehaviour
 
                     spit.Play();
                     Instantiate(beam, transform.position, transform.rotation);
-                }                
+                }
             }
+
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(player.position - transform.position), Time.deltaTime * trackingSpeed);
 
             yield return new WaitForSeconds(3f);
         }
