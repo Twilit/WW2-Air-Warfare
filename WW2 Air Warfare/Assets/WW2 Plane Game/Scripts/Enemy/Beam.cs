@@ -16,9 +16,9 @@ public class Beam : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(Vector3.forward * Time.deltaTime * 2800f);
+        transform.Translate(Vector3.forward * Time.deltaTime * 1500f);
         if(player)
-        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(player.position - transform.position), Time.deltaTime * 0.005f);
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(player.position - transform.position), Time.deltaTime * 0.008f);
     }
 
     private void OnTriggerEnter(Collider other)

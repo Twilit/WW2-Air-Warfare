@@ -50,7 +50,6 @@ public class Health : MonoBehaviour
 
     }
 
-
     public void Damage(int damageValue)
     {
         CurrentHealth -= damageValue;

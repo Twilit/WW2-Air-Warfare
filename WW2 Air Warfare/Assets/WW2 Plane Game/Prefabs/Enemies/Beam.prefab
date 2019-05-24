@@ -152,7 +152,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.44
+  m_Radius: 0.35
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8744366205519770452
 MonoBehaviour:
@@ -166,6 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94d012741ed51744fbd922b81157c6aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageDealt: 35
 --- !u!1 &5745744600337330051
 GameObject:
   m_ObjectHideFlags: 0
@@ -4859,7 +4860,7 @@ ParticleSystem:
 --- !u!199 &6816256346310429101
 ParticleSystemRenderer:
   serializedVersion: 6
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
