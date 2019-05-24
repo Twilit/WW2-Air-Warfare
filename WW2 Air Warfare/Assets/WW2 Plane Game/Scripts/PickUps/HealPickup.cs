@@ -16,12 +16,7 @@ public class HealPickup : MonoBehaviour
             print("pick up player");
             //colider.GetComponent gets the health script from the player not the pickup
             Health health = collider.transform.root.GetComponent<Health>();
-            if(health!=null)
-            { 
-
-             health.Damage(-50);
-                Destroy(gameObject);
-            }
+            AddHealth(health);
         }
     }
     // Use this for initialization
@@ -33,4 +28,14 @@ public class HealPickup : MonoBehaviour
 	void Update () {
 		
 	}
+
+    public void AddHealth(Health health)
+    {
+        if (health != null)
+        {
+
+            health.Damage(-50);
+            Destroy(gameObject);
+        }
+    }
 }

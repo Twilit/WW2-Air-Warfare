@@ -5869,7 +5869,7 @@ GameObject:
   - component: {fileID: 1839477254820506673}
   m_Layer: 9
   m_Name: PickUpGrabBox
-  m_TagString: Player
+  m_TagString: PlayerGrabBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
