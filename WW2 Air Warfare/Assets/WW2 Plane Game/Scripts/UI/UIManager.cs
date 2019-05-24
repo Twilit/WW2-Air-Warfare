@@ -13,7 +13,10 @@ public class UIManager : MonoBehaviour
 
     public Text scoreNum;
     public Text timeNum;
-    public GameObject losePanel;
+    public GameObject LosePanel;
+    public GameObject HealthPanel;
+    public GameObject ThrottleSlider;
+    public GameObject AmmoCounter;
     //haveing the score varible be  be a static variable means that only one copy of it exists
     //
     public static int score;
@@ -54,8 +57,10 @@ public class UIManager : MonoBehaviour
         //scoreNum.text = "Score: " + score + "";
         if(healthscript.IsDead)
         {
-            //losePanel.SetActive(true);
-           // losePanel.SetActive(true); // ask simon!
+            LosePanel.SetActive(true);
+            HealthPanel.SetActive(false);
+            ThrottleSlider.SetActive(false);
+            AmmoCounter.SetActive(false);
             Time.timeScale = 0;
 
         }
