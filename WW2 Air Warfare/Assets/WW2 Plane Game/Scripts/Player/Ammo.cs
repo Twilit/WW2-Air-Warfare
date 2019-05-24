@@ -8,7 +8,7 @@ public class Ammo : MonoBehaviour
     [SerializeField] int maximumAmmo = 5;
     //seting a maximum health variable as 100 which can be changed in the inspector
 
-    [SerializeField] private int CurrentAmmo = 0;
+    [SerializeField] public int CurrentAmmo = 0;
 
 
 
@@ -26,9 +26,7 @@ public class Ammo : MonoBehaviour
     {
         //GetComponent<Rigidbody>().AddForce(new Vector3(100, 0, 0));
     }
-
-
-
+    
     public bool HasAmmo { get { return CurrentAmmo >0; } }
     //using IsDead to get the result of the code current health <=0
 
