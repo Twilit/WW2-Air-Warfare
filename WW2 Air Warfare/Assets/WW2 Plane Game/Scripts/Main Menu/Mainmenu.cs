@@ -18,6 +18,11 @@ public class Mainmenu : MonoBehaviour
 
     } 
 
+    public void FreeFLight()
+    {
+
+    }
+
     public void QuitGame()
     {
 
