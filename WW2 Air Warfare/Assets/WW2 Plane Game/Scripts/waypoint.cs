@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class waypoint : MonoBehaviour
 {
+    public bool reachedEnd = false;
+
     int current = 0;
     public GameObject[] Waypoints;
     public float speed;
@@ -20,9 +22,14 @@ public class waypoint : MonoBehaviour
         if (Vector3.Distance(Waypoints[current].transform.position, transform.position) < Wpradius)
         {
             current++;
-            if (current >= Waypoints.Length && repeat == true)
+            if (current >= Waypoints.Length)
             {
-                current = 0;
+                reachedEnd = true;
+
+                if (repeat)
+                {
+                    current = 0;
+                }
             }
         }
         transform.position = Vector3.MoveTowards(transform.position, Waypoints[current].transform.position, Time.deltaTime * speed);

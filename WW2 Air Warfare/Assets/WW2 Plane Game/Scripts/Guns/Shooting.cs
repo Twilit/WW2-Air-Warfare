@@ -92,7 +92,7 @@ namespace PlaneFlight
                     }
                     else if (hit.transform.tag == "Bubble" && hit.transform.tag == "Minicrabs")
                     {
-                        hit.transform.
+                        hit.transform.GetComponent<ShootKill>().Disappear();
                     }
                     else
                     {

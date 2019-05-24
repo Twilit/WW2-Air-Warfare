@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 6518801411254392136}
   - component: {fileID: 1164115454691715658}
   - component: {fileID: 1575119120341299597}
+  - component: {fileID: 7898788254007599650}
   m_Layer: 0
   m_Name: Beam
-  m_TagString: Untagged
+  m_TagString: Bubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62,6 +63,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7898788254007599650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063768575128205858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b99b5a92f41e2d4458ca82fc331b762e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3876402233471353270
 GameObject:
   m_ObjectHideFlags: 0

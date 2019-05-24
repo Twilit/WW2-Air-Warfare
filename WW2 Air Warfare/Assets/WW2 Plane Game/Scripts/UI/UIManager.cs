@@ -1,12 +1,14 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {//acessing the Health script and the slider
 
     //making UI text elements that hold the text elemnts as well as a element to hold the players health scrips
 
+    public waypoint crabWaypoints;
     public Health healthscript;
     public Text healthTxt;
     public Slider healthBar;
@@ -48,6 +50,14 @@ public class UIManager : MonoBehaviour
         score += amount;
     }
 
+    private void Update()
+    {
+        if (crabWaypoints.reachedEnd)
+        {
+            Lose();
+        }
+    }
+
     // Update is called once per frame
     IEnumerator UpdateUI()
     {
@@ -57,14 +67,24 @@ public class UIManager : MonoBehaviour
         //scoreNum.text = "Score: " + score + "";
         if(healthscript.IsDead)
         {
-            LosePanel.SetActive(true);
-            HealthPanel.SetActive(false);
-            ThrottleSlider.SetActive(false);
-            AmmoCounter.SetActive(false);
-            Time.timeScale = 0;
-
+            Lose();
         }
         yield return new WaitForSeconds(0.5f);
         StartCoroutine("UpdateUI");
+    }
+
+    IEnumerator LoadLevelAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        SceneManager.LoadScene(0);
+    }
+
+    public void Lose()
+    {
+        LosePanel.SetActive(true);
+        HealthPanel.SetActive(false);
+        ThrottleSlider.SetActive(false);
+        AmmoCounter.SetActive(false);
+        StartCoroutine(LoadLevelAfterDelay(3));
     }
 }
