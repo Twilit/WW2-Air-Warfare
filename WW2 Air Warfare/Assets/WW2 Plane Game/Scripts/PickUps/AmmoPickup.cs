@@ -16,12 +16,7 @@ public class AmmoPickup : MonoBehaviour
             //colider.GetComponent gets the health script from the player not the pickup
             Ammo Ammo = collider.transform.root.GetComponent<Ammo>();
 
-            if(Ammo!=null)
-            { 
-
-             Ammo.ChangeGunAmmo(-50);
-                Destroy(gameObject);
-}
+            AddAmmo(Ammo);
         }
     }
 
@@ -35,5 +30,15 @@ public class AmmoPickup : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void AddAmmo(Ammo ammo)
+    {
+        if (ammo != null)
+        {
+
+            ammo.ChangeGunAmmo(-50);
+            Destroy(gameObject);
+        }
     }
 }

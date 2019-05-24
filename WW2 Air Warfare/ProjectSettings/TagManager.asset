@@ -8,6 +8,9 @@ TagManager:
   - PlayerGrabBox
   - Enemy
   - GameManager
+  - BombPU
+  - AmmoPU
+  - HealthPU
   layers:
   - Default
   - TransparentFX

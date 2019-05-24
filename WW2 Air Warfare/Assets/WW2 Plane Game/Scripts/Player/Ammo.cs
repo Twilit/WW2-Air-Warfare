@@ -34,8 +34,12 @@ public class Ammo : MonoBehaviour
     void LateUpdate()
     {
         //GetComponent<Rigidbody>().AddForce(new Vector3(100, 0, 0));
-        gunAmmoUI.text = CurrentAmmo + "/" + maximumAmmo;
-        bombAmmoUI.text = "x"+currentBombCount;
+
+        if (gunAmmoUI && bombAmmoUI)
+        {
+            gunAmmoUI.text = CurrentAmmo + "/" + maximumAmmo;
+            bombAmmoUI.text = "x" + currentBombCount;
+        }
     }
 
 

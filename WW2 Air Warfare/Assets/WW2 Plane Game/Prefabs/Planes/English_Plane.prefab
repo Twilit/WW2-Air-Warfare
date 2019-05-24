@@ -5869,7 +5869,7 @@ GameObject:
   - component: {fileID: 1839477254820506673}
   m_Layer: 9
   m_Name: PickUpGrabBox
-  m_TagString: Player
+  m_TagString: PlayerGrabBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12573,7 +12573,7 @@ MonoBehaviour:
   mph: 0
   maxMPH: 180
   rbLerpSpeed: 0.025
-  maxLiftPower: 7000
+  maxLiftPower: 5500
   liftCurve:
     serializedVersion: 2
     m_Curve:
@@ -12587,8 +12587,8 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.23754108
-      value: 0.5169349
+      time: 0.54967487
+      value: 0.745008
       inSlope: 3.0088947
       outSlope: 3.0088947
       tangentMode: 0
@@ -12650,8 +12650,6 @@ MonoBehaviour:
   maximumHealth: 100
   CurrentHealth: 0
   deathsound: {fileID: 0}
-  rend: {fileID: 0}
-  playerCam: {fileID: 0}
   explosionPrefab: {fileID: 163066, guid: 53777b8572d1e7242bc90044f62667ce, type: 3}
 --- !u!114 &8198730377381444309
 MonoBehaviour:
@@ -12665,8 +12663,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 954d2f7cc6513614590e3225ed7ce3c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gunAmmoUI: {fileID: 0}
+  bombAmmoUI: {fileID: 0}
   maximumAmmo: 100
   CurrentAmmo: 0
+  maxBombs: 3
 --- !u!1 &8241180823634169720
 GameObject:
   m_ObjectHideFlags: 0
