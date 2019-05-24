@@ -54,7 +54,7 @@ public class UIManager : MonoBehaviour
         //scoreNum.text = "Score: " + score + "";
         if(healthscript.IsDead)
         {
-            losePanel.SetActive(true);
+            //losePanel.SetActive(true);
            // losePanel.SetActive(true); // ask simon!
             Time.timeScale = 0;
 
