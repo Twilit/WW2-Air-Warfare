@@ -36,7 +36,7 @@ public class UIManager : MonoBehaviour
         healthBar.maxValue = healthscript.getMaxHealth();
         //doing th same here but with the players current Health
         healthBar.value = healthscript.GetHealth();
-        healthTxt.text = "Health: " + healthscript.GetHealth();
+        healthTxt.text = "Player: " + healthscript.GetHealth();
         
         StartCoroutine("UpdateUI");
 

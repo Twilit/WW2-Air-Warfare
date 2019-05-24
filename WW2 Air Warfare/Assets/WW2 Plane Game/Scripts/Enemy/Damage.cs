@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Damage : MonoBehaviour
 {
+    public int damageDealt = 15;
+    bool doneDamage = false;
+
     void OnTriggerEnter(Collider collider)
     {
         //printing a statement to console for testing purposes
@@ -15,11 +18,12 @@ public class Damage : MonoBehaviour
             print("Damage player");
             //colider.GetComponent gets the health script from the player not the pickup
             Health health = collider.transform.root.GetComponent<Health>();
-            if (health != null)
+            if (health != null && !doneDamage)
             {
 
-                health.Damage(50);
-               
+                health.Damage(damageDealt);
+
+                doneDamage = true;
             }
         }
     }

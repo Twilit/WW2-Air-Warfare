@@ -13,6 +13,7 @@ namespace PlaneFlight
         public BasePlaneInput input;
         public Transform[] guns;
         public GameObject explosion;
+        public GameObject crabBlood;
         public AudioSource gunshotSound;
         public Ammo ammo;
         private float fireDelay = 0f;
@@ -69,6 +70,13 @@ namespace PlaneFlight
                     {
                         hit.transform.GetComponent<CrabHealth>().DealDamage(3);
                         print("Dealt damage");
+
+                        if (crabBlood)
+                        {
+                            GameObject impactGameObject = Instantiate(crabBlood, hit.point, Quaternion.LookRotation(hit.normal));
+
+                            Destroy(impactGameObject, 5f);
+                        }
                     }
                     else if (hit.transform.tag == "HealthPU")
                     {
@@ -82,12 +90,14 @@ namespace PlaneFlight
                     {
                         hit.transform.GetComponent<BombPickup>().AddBomb(input.transform.GetComponent<Ammo>());
                     }
-
-                    if (explosion)
+                    else
                     {
-                        GameObject impactGameObject = Instantiate(explosion, hit.point, Quaternion.LookRotation(hit.normal));
+                        if (explosion)
+                        {
+                            GameObject impactGameObject = Instantiate(explosion, hit.point, Quaternion.LookRotation(hit.normal));
 
-                        Destroy(impactGameObject, 5f);
+                            Destroy(impactGameObject, 5f);
+                        }
                     }
                 }
                 else

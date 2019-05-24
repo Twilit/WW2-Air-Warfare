@@ -31,7 +31,7 @@ public class WaterLaser : MonoBehaviour
 
                 float angle = Vector3.Angle(transform.forward, directionToPlayer);
 
-                if (Mathf.Abs(angle) < 15f && Vector3.Distance(transform.position, player.position) < 8000)
+                if (Mathf.Abs(angle) < 15f && Vector3.Distance(transform.position, player.position) < 2000)
                 {
                     transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(player.position - transform.position), Time.deltaTime * trackingSpeed);
 

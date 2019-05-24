@@ -637,6 +637,8 @@ MonoBehaviour:
   - {fileID: 5630041604826949225}
   - {fileID: 5753508426393631743}
   explosion: {fileID: 1404802046468498, guid: 2938def9583039b498280fae52bf6fd4, type: 3}
+  crabBlood: {fileID: 4834757071130242038, guid: 8d4a393bcf9d7ce48805c5d1cbffb2f9,
+    type: 3}
   gunshotSound: {fileID: 7531830026248925650}
   ammo: {fileID: 0}
 --- !u!1 &3335798995968774540
@@ -13441,10 +13443,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8241180824111841333}
     m_Modifications:
-    - target: {fileID: 1536175011281482, guid: 0fb47678444e7324aac1b7880b8222ae, type: 3}
-      propertyPath: m_Name
-      value: Character_Pilot_01
-      objectReference: {fileID: 0}
     - target: {fileID: 4837011115236128, guid: 0fb47678444e7324aac1b7880b8222ae, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.0100669265
@@ -13488,6 +13486,10 @@ PrefabInstance:
     - target: {fileID: 4837011115236128, guid: 0fb47678444e7324aac1b7880b8222ae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1536175011281482, guid: 0fb47678444e7324aac1b7880b8222ae, type: 3}
+      propertyPath: m_Name
+      value: Character_Pilot_01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fb47678444e7324aac1b7880b8222ae, type: 3}
