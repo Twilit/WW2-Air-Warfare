@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
-        winPanel.SetActive(false);
+        //winPanel.SetActive(false);
         amountkilled = 0;
         
         
@@ -38,23 +38,8 @@ public class GameManager : MonoBehaviour {
 	void Update () {
 
             //If the player has survived 180 seconds then the they win
-            if (Time.timeSinceLevelLoad >30)
-        {
-            won = true;
            
 
-        }
-
-        if(won == true)
-        {
-            winPanel.SetActive(true);
-        
-        }
-        else if (amountkilled > 30)
-        {
-            
-        }
-
         
 
 
@@ -63,5 +48,5 @@ public class GameManager : MonoBehaviour {
 
 
 
-    }
+    }   
 }

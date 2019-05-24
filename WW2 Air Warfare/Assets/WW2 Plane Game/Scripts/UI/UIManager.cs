@@ -50,8 +50,8 @@ public class UIManager : MonoBehaviour
     {
         healthBar.value = healthscript.GetHealth();
         healthTxt.text = "Health: " + healthscript.GetHealth();
-        timeNum.text = "Time" + (int)Time.time;
-        scoreNum.text = "Score: " + score + "";
+        //timeNum.text = "Time" + (int)Time.time;
+        //scoreNum.text = "Score: " + score + "";
         if(healthscript.IsDead)
         {
             losePanel.SetActive(true);
