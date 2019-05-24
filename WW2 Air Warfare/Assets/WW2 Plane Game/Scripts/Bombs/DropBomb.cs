@@ -28,7 +28,7 @@ namespace PlaneFlight
         {
             if (input)
             {
-                if (ammo.HasAmmo)
+                if (ammo.HasBombAmmo)
                 {
 
 
@@ -37,11 +37,11 @@ namespace PlaneFlight
                         input.BombDrop = false;
                         dropDelay = Time.time + 1f / dropRate;
 
-                        if (ammo.HasAmmo)
+                        if (ammo.HasBombAmmo)
                         {
-                            Debug.Log("Has Ammo: " + ammo.HasAmmo);
+                            Debug.Log("Has Ammo: " + ammo.HasBombAmmo);
 
-                            ammo.Change(1);
+                            ammo.ChangeBombAmmo(1);
 
                             HandleBombing();
 
@@ -62,7 +62,6 @@ namespace PlaneFlight
             bombDropAudio.Play();
             GameObject droppedBomb = Instantiate(bomb, transform.position, Quaternion.Euler(new Vector3(transform.eulerAngles.x, transform.eulerAngles.y - 180, transform.eulerAngles.z)));
             droppedBomb.GetComponent<Rigidbody>().velocity = input.gameObject.GetComponent<Rigidbody>().velocity;
-            ammo.Change(1);
         }
         #endregion
     }
