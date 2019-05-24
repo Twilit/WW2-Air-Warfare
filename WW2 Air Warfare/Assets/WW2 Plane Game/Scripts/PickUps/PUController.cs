@@ -8,8 +8,7 @@ public class PUController : MonoBehaviour
     private GameObject AUP;
     private GameObject BUP;
 
-    public float respawnTime = 10f;
-    public float respawnDelay = 10f;
+    bool spawning = false;
 
     void Start()
     {
@@ -20,13 +19,39 @@ public class PUController : MonoBehaviour
 
     void Update()
     {
-        if (HUP.activeInHierarchy == false)
+        if (HUP.activeInHierarchy == false && !spawning)
         {
-
+            StartCoroutine("Spawn", 1);
         }
-        else if (AUP.activeInHierarchy == false)
+        else if (AUP.activeInHierarchy == false && !spawning)
         {
-
+            StartCoroutine("Spawn", 2);
         }
+        else if (BUP.activeInHierarchy == false && !spawning)
+        {
+            StartCoroutine("Spawn", 3);
+        }
+    }
+
+    IEnumerator Spawn(int identity)
+    {
+        spawning = true;
+
+        yield return new WaitForSeconds(5f);
+
+        if (identity == 1)
+        {
+            HUP.SetActive(true);
+        }
+        else if (identity == 2)
+        {
+            AUP.SetActive(true);
+        }
+        else if (identity == 3)
+        {
+            BUP.SetActive(true);
+        }
+
+        spawning = false;
     }
 }
